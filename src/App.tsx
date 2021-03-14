@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import './App.css';
@@ -9,12 +9,10 @@ export class App extends React.Component {
 
 	render() {
 		return (
-            <main className="App">
-                <Switch>
-					<Route exact path="/" component={AboutMe} />
-					<Redirect to="/" />
-                </Switch>
-            </main>
+			<main className="App">
+				<Route exact path="/" component={AboutMe}/>
+				<Redirect to="/"/>
+			</main>
 		);
 	}
 }

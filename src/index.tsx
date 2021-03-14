@@ -7,7 +7,7 @@ import 'primeflex/primeflex.css';
 import { App } from './App';
 
 ReactDOM.render(
-	<BrowserRouter>
+	<BrowserRouter basename="/resume">
 		<React.StrictMode>
 			<App/>
 		</React.StrictMode>
