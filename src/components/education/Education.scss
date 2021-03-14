@@ -1,0 +1,24 @@
+.education {
+  &__content {
+    padding: 0 20px 20px 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__logo {
+    width: 72px;
+    height: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+  }
+
+  &__university-name {
+    font-weight: bold;
+  }
+}

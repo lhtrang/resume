@@ -1,0 +1,71 @@
+.experiences {
+  padding: 44px 20px 20px;
+
+  .time-marker {
+    background-color: #0d89ec;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 50px;
+
+    &--year {
+      border-radius: 50%;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    &--month {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .left-col {
+    max-width: 150px;
+
+    &__logo {
+      height: 90px;
+      max-width: 140px;
+      background: white;
+      padding: 4px;
+      border-radius: 2px;
+    }
+  }
+
+  .exp-content {
+    padding-bottom: 20px;
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__sub-title {
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: var(--text-color-secondary);
+    }
+  }
+
+  // override
+  .p-timeline-event-opposite {
+    max-width: 150px;
+  }
+
+  .p-timeline-event {
+    min-height: 90px;
+  }
+
+  .p-timeline-event-opposite {
+    margin-top: -26px;
+  }
+
+  .p-timeline-event-content {
+    margin-bottom: 40px;
+  }
+
+  .p-timeline-left .p-timeline-event-opposite {
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+}

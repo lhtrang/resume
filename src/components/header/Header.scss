@@ -1,0 +1,70 @@
+.header {
+    margin-top: 6px;
+
+    &__cover {
+        height: 120px;
+        background: linear-gradient(to bottom left, #9e9e9e 0%, #d3d3d3 100%);
+        text-align: right;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__slogan {
+        color: white;
+        font-size: 26px;
+        margin-right: 40px;
+        padding-top: 70px;
+        padding-left: 450px;
+        text-align: right;
+
+        &--strong1 {
+            font-size: 32px;
+        }
+
+        &--strong2 {
+            font-size: 34px;
+        }
+    }
+
+    &__content {
+        height: 80px;
+    }
+
+    &__avatar {
+        margin-top: -70px;
+        width: 160px;
+        height: 100%;
+        text-align: center;
+    }
+
+    &__avatar-image {
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        background-color: aqua;
+        border: solid 2px white;
+    }
+
+    &__full-name {
+        margin-top: -40px;
+    }
+
+    &__info-line {
+        margin-bottom: 6px;
+    }
+
+    &__info-icon {
+        background-color: black;
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    &__about-me {
+        text-align: right;
+        margin-right: 40px;
+        font-size: 20px;
+    }
+}

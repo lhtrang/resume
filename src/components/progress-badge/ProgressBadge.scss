@@ -1,0 +1,37 @@
+.progress-badge {
+    margin: 6px 6px 6px 0;
+    position: relative;
+    height: 28px;
+    min-width: 90px;
+    border-radius: 10px;
+    text-align: center;
+
+    &__label {
+        line-height: 28px;
+        color: white;
+        position: relative;
+        z-index: 1;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__pipe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        &--progress {
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            background-color: #5e8f32;
+        }
+
+        &--remain {
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            background-color: #6c757d;
+        }
+    }
+}
