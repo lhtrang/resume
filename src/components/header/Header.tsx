@@ -14,7 +14,7 @@ export class Header extends React.Component {
 				</div>
 				<div className="p-grid p-nogutter header__content">
 					<div className="header__avatar">
-						<img className="header__avatar-image" src={avatar}/>
+						<img alt="avatar" className="header__avatar-image" src={avatar}/>
 					</div>
 					<div className="p-col">
 						<h2 className="header__full-name">LE HUNG TRANG</h2>

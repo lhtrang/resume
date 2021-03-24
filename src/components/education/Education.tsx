@@ -12,7 +12,7 @@ export class Education extends React.Component {
 				</Divider>
 				<div className="education__content p-grid p-nogutter">
 					<div className="p-col-fixed">
-						<img className="education__logo" src={hcmusLogo}/>
+						<img alt="university logo" className="education__logo" src={hcmusLogo}/>
 					</div>
 					<div className="education__university-name p-col-fixed p-mr-4">
 						Ho Chi Minh University of Science

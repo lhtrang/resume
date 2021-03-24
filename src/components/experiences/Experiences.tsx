@@ -242,7 +242,7 @@ export class Experiences extends React.Component<{}, { events: any }> {
 		const customizeLeftContent = (item: any) => {
 			return (
 				<div className="left-col">
-					{item.logo && <img className="left-col__logo" src={item.logo}/>}
+					{item.logo && <img alt="logo" className="left-col__logo" src={item.logo}/>}
 				</div>
 			);
 		};
