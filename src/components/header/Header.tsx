@@ -9,7 +9,7 @@ export class Header extends React.Component {
 				<div className="header__cover">
 					<div className="header__slogan">
 						<span className="header__slogan--strong1">Enthusiast</span> build
-						<span className="header__slogan--strong2"> high-end</span> software
+						<span className="header__slogan--strong2"> high-value</span> software
 					</div>
 				</div>
 				<div className="p-grid p-nogutter header__content">
