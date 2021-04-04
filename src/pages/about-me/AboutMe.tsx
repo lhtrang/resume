@@ -8,7 +8,7 @@ import { Education } from '../../components/education/Education';
 import { Skills } from '../../components/skills/Skills';
 import { Experiences } from '../../components/experiences/Experiences';
 
-export class AboutMe extends React.Component<{}, { isDark: boolean }>  {
+export class AboutMe extends React.Component<{}, { isDark: boolean }> {
 
 	LIGHT_THEME = 'bootstrap4-light-blue';
 	DARK_THEME = 'bootstrap4-dark-blue';
@@ -40,10 +40,18 @@ export class AboutMe extends React.Component<{}, { isDark: boolean }>  {
 		return (
 			<div className="about-me-page">
 				<div className="theme-switcher">
-					<div className="theme-switcher__content p-grid p-nogutter p-justify-end">
-						<i className="theme-switcher__icon pi pi-sun"/>
-						<InputSwitch checked={this.state.isDark} onChange={this.onThemeChange.bind(this)}/>
-						<i className="theme-switcher__icon pi pi-moon"/>
+					<div className="theme-switcher__content p-grid p-nogutter p-justify-between">
+						<div>
+							<a href="./assets/trangle_resume.pdf" className="save-me-link p-button"  download="trangle_resume">
+								<span>SAVE ME</span>
+								<i className="pi pi-file p-ml-2"/>
+							</a>
+						</div>
+						<div className="p-grid p-nogutter p-align-center">
+							<i className="theme-switcher__icon pi pi-sun"/>
+							<InputSwitch checked={this.state.isDark} onChange={this.onThemeChange.bind(this)}/>
+							<i className="theme-switcher__icon pi pi-moon"/>
+						</div>
 					</div>
 				</div>
 				<Card>

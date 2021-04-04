@@ -19,7 +19,6 @@ export class Skills extends React.Component {
 						</div>
 						<div className="p-grid p-nogutter">
 							<Divider>Libraries & Frameworks</Divider>
-							<ProgressBadge value={80} label="Cypress"/>
 							<ProgressBadge value={90} label="Angular"/>
 							<ProgressBadge value={50} label="ReactJS"/>
 							<ProgressBadge value={80} label="Cordova"/>
