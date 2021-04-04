@@ -12,16 +12,27 @@ export class AboutMe extends React.Component<{}, { isDark: boolean }> {
 
 	LIGHT_THEME = 'bootstrap4-light-blue';
 	DARK_THEME = 'bootstrap4-dark-blue';
+	THEME_STORAGE_KEY = 'IS_DARK';
 
 	constructor(props: {} | Readonly<{}>) {
 		super(props);
 		this.state = {
-			isDark: false
+			isDark: JSON.parse(localStorage.getItem(this.THEME_STORAGE_KEY) || 'false')
 		};
+	}
+
+	componentDidMount() {
+		this.changeTheme(this.state.isDark);
 	}
 
 	onThemeChange(e: any) {
 		const isDark = e.value;
+		this.changeTheme(isDark);
+		this.setState({isDark});
+		localStorage.setItem(this.THEME_STORAGE_KEY, isDark);
+	}
+
+	private changeTheme(isDark: boolean) {
 		const themeElement = document.getElementById('theme-link');
 
 		if (themeElement) {
@@ -33,7 +44,6 @@ export class AboutMe extends React.Component<{}, { isDark: boolean }> {
 			}
 			themeElement.setAttribute('href', newTheme);
 		}
-		this.setState({isDark});
 	}
 
 	render() {
