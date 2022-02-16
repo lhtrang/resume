@@ -41,7 +41,6 @@
         border-radius: 50%;
         height: 140px;
         width: 140px;
-        background-color: aqua;
         border: solid 2px white;
     }
 
@@ -66,5 +65,10 @@
         text-align: right;
         margin-right: 40px;
         font-size: 20px;
+    }
+
+    .icon-medium {
+        width: 26px;
+        height: 26px;
     }
 }

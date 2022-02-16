@@ -18,12 +18,25 @@ export class Experiences extends React.Component<{}, { events: any }> {
 				markerClass: 'time-marker--year'
 			},
 			{
+				time: 'Aug',
+				markerClass: 'time-marker--month',
+				title: 'Senior Software Engineer',
+				role: 'Team Leader',
+				project: 'IAM Application',
+				remark: {
+					'Framework': 'Angular, SpringBoot',
+					'Language': 'TypeScript, Java',
+					'Tool': 'Docker'
+				},
+				description: 'Cooperating with Swiss team. Coaching Frontend and Cypress automation.'
+			},
+			{
 				time: '2021',
 				markerClass: 'time-marker--year',
 				title: 'Senior software engineer',
 				role: 'Frontend expertise',
 				project: 'Technology & Innovation',
-				description: 'Building application framework & tool'
+				description: 'Building application frameworks & tools'
 			},
 			{
 				time: 'Dec',

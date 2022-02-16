@@ -40,6 +40,7 @@ export class Skills extends React.Component {
 							<ProgressBadge value={80} label="Reactive programing"/>
 							<ProgressBadge value={90} label="OIDC"/>
 							<ProgressBadge value={95} label="Testing"/>
+							<ProgressBadge value={80} label="CI/CD"/>
 						</div>
 						<div className="p-grid p-nogutter">
 							<Divider>Tools</Divider>

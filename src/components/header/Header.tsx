@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../../assets/images/avatar.jpg';
 import './Header.scss';
+import { Tooltip } from 'primereact/tooltip';
 
 export class Header extends React.Component {
 	render() {
@@ -29,12 +30,26 @@ export class Header extends React.Component {
 									1112334.lhtrang@gmail.com
 								</div>
 								<div className="header__info-line">
-									<i className="header__info-icon pi pi-phone" />
-									(84) 98 211 3991
+									<Tooltip target="#icon-linkedin" position="bottom" content="LinkedIn" />
+									<a id="icon-linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tranglh93">
+										<i className="header__info-icon pi pi-linkedin" />
+									</a>
+
+									<Tooltip target="#icon-medium" position="bottom" content="Medium" />
+									<a id="icon-medium" target="_blank" rel="noopener noreferrer" href="https://tranglh.medium.com">
+										<i className="header__info-icon pi icon-medium">
+											<span>M</span>
+										</i>
+									</a>
+
+									<Tooltip target="#icon-website" position="bottom" content="Website" />
+									<a id="icon-website" target="_blank" rel="noopener noreferrer" href="https://lhtrang.github.io/resume">
+										<i className="header__info-icon pi pi-globe"/>
+									</a>
 								</div>
 							</div>
 							<div className="header__about-me p-col">
-								Frontend base, tend to be Full stack
+								Frontend specialist, tend to be Full stack
 							</div>
 						</div>
 					</div>

@@ -7,6 +7,7 @@ import { Header } from '../../components/header/Header';
 import { Education } from '../../components/education/Education';
 import { Skills } from '../../components/skills/Skills';
 import { Experiences } from '../../components/experiences/Experiences';
+import { Button } from 'primereact/button';
 
 export class AboutMe extends React.Component<{}, { isDark: boolean }> {
 
@@ -49,13 +50,10 @@ export class AboutMe extends React.Component<{}, { isDark: boolean }> {
 	render() {
 		return (
 			<div className="about-me-page">
-				<div className="theme-switcher">
+				<div className="theme-switcher hidden-print">
 					<div className="theme-switcher__content p-grid p-nogutter p-justify-between">
 						<div>
-							<a href="./assets/trangle_resume.pdf" className="save-me-link p-button"  download="trangle_resume">
-								<span>SAVE ME</span>
-								<i className="pi pi-file p-ml-2"/>
-							</a>
+							<Button label="SAVE ME" icon="pi pi-file" onClick={() => window.print()} />
 						</div>
 						<div className="p-grid p-nogutter p-align-center">
 							<i className="theme-switcher__icon pi pi-sun"/>
